@@ -1,0 +1,281 @@
+@import "https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Love+Ya+Like+A+Sister&display=swap";
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner {
+  width: 100%;
+  background-image: url("../images/lidye-1Shk_PkNkNw-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+.main-nav-container {
+  display: flex;
+  padding: 1rem;
+  background-color: #020101;
+}
+.main-nav-container .logo img {
+  height: 30px;
+  object-fit: contain;
+}
+.main-nav-container .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: sans-serif;
+  color: #7a44fe;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  position: relative;
+}
+.main-nav ul {
+  display: flex;
+  gap: 3rem;
+}
+@media only screen and (max-width: 992px) {
+  .main-nav ul {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+.main-nav li {
+  list-style-type: none;
+}
+.main-nav a {
+  text-decoration: none;
+  color: #7a44fe;
+}
+
+.menu-icon {
+  border: 1px solid #424242;
+  color: #424242;
+  padding-left: 1em;
+  padding-right: 1em;
+  cursor: pointer;
+}
+@media only screen and (max-width: 992px) {
+  .menu-icon {
+    display: flex;
+    position: absolute;
+    cursor: pointer;
+  }
+}
+.menu-icon .fas {
+  height: 30px;
+  font-size: 2.2em;
+  color: #6d6d6d;
+}
+
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-content: flex-end;
+  justify-content: center;
+  padding: 4rem 4rem;
+}
+@media only screen and (max-width: 767px) {
+  .heading-container {
+    padding: 4rem 2rem;
+  }
+}
+.heading-container .main-head {
+  color: #f8f9fc;
+  font-size: 3rem;
+}
+@media only screen and (max-width: 992px) {
+  .heading-container .main-head {
+    width: 50%;
+  }
+}
+.heading-container .menu {
+  color: #f8f9fc;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  border: 1px solid #7a44fe;
+  padding: 5px 10px;
+  border-radius: 2px;
+  color: #7a44fe;
+  margin-top: 1em;
+}
+.btn a {
+  text-decoration: none;
+}
+
+.btn-menu {
+  background-color: #7a44fe;
+}
+.btn-menu a {
+  color: #f8f9fc;
+}
+
+.idea-head {
+  margin-top: 1em;
+  color: #424242;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: flex-end;
+  justify-content: center;
+  gap: 50px;
+}
+
+.card {
+  width: 25%;
+  padding: 2rem;
+}
+@media only screen and (max-width: 992px) {
+  .card {
+    padding: 0.5rem;
+  }
+}
+.card img {
+  display: block;
+  width: 100%;
+  height: 50px;
+}
+
+@media only screen and (max-width: 992px) {
+  .card-3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1em;
+}
+.icon-container .image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border: 2px solid black;
+  border-radius: 65px;
+}
+.icon-container .sub-head {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.content-container {
+  font-size: 1.2em;
+}
+
+.news-container {
+  width: 100%;
+  padding: 2em;
+  background-color: #7a44fe;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.new-main-head {
+  color: #f8f9fc;
+}
+
+.news-card {
+  width: 22%;
+  line-height: 1.5;
+  margin-top: 4em;
+}
+.news-card img {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+.news-card .news-content {
+  background: white;
+  padding: 1em;
+}
+
+.form-head {
+  margin-top: 1em;
+  color: #424242;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+}
+
+form {
+  padding: 2rem;
+  width: 25%;
+}
+form .field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+
+input, select, textarea {
+  padding: 0.5em 1em;
+  border: 1px solid rgba(201, 200, 200, 0.598);
+}
+
+select::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+h1, h2, h3 {
+  font-family: "Love Ya Like A Sister", cursive;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */
