@@ -1,0 +1,19 @@
+.btn {
+  display: inline-block;
+  border: 1px solid $primary;
+  padding:5px 10px;
+  border-radius:2px;
+  color: $primary;
+  margin-top: 1em;
+  a{
+    text-decoration:none;
+  }
+ }
+
+ .btn-menu {
+   background-color: $primary;
+   a{
+    color: $text-color;
+   }
+   
+ }

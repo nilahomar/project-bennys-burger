@@ -1,0 +1,29 @@
+.form-head {
+  margin-top: 1em;
+  color: $secondary;
+}
+.form-container {
+  @include flex-container($justify-center:center); 
+  flex-wrap: wrap;
+  font-family: sans-serif;
+}
+form {
+  padding: 2rem;
+  width: 25%;
+  .field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+  }
+}
+input, select, textarea {
+  padding: 0.5em 1em;
+  border: 1px solid rgba(201, 200, 200, 0.598);
+}
+select::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+}

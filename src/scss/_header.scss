@@ -1,0 +1,86 @@
+.banner {
+  width: 100%;
+  background-image: url("../images/lidye-1Shk_PkNkNw-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+.main-nav-container {
+  display: flex;
+  padding: 1rem;
+  background-color: #020101;
+  .logo img {
+    height: 30px;
+    object-fit: contain;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: sans-serif;
+    color: $primary;
+  }
+}
+
+.main-nav {
+  @include flex-container();
+  align-items: center;
+  margin-left: auto;
+  position: relative;
+  
+  ul {
+    display: flex;
+    gap: 3rem;
+    @include md-screen{
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+  li {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    color: $primary;
+  }
+}
+
+.menu-icon {
+  border: 1px solid $secondary;
+  color: $secondary;
+  padding-left: 1em;
+  padding-right: 1em;
+  cursor: pointer;
+  @include md-screen{
+    display: flex;
+    position: absolute;
+    cursor: pointer;
+  }
+  .fas {
+    height: 30px;
+    font-size: 2.2em;
+    color: #6d6d6d;
+  }
+}
+
+.heading-container {
+  @include flex-container($direction: column, $justify-end: flex-end);
+  padding: 4rem 4rem;
+  @include sm-screen{
+    padding: 4rem 2rem;
+  }
+  .main-head {
+    color: $text-color;
+    font-size: 3rem;
+    @include md-screen {
+      width: 50%;
+    }
+   
+  }
+  .menu {
+    color: $text-color;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+  }
+}

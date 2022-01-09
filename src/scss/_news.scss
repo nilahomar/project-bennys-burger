@@ -1,0 +1,30 @@
+.news-container {
+  width: 100%;
+  padding: 2em;
+  background-color: $primary;
+}
+
+.cards-wrapper {
+  @include flex-container();
+  align-items: center;
+  justify-content: space-between;
+}
+
+.new-main-head {
+  color: $text-color;
+}
+
+.news-card {
+  width: 22%;
+  line-height: 1.5;
+  margin-top: 4em;
+  img {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+  }
+  .news-content {
+    background: white;
+    padding: 1em;
+  }
+}
