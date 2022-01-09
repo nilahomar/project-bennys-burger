@@ -9,7 +9,7 @@
     "build": "run-s clean clean:styles build:styles copy",
     "deploy": "run-s build publish",
     "build:styles": "sass src/scss:src/styles",
-    "watch": "live-server src",
+    "watch": "live-server",
     "watch:styles": "sass src/scss:src/styles --watch",
     "clean": "rm -rf dist",
     "clean:styles": "rm -rf src/styles",
